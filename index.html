@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>eCommerce</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/jquery.js" ></script>
+        <script src="js/epam.jobs.js" ></script>
+    </head>
+    <body>
+        <div class="eHeader">
+            <div class="eHeaderTop">
+                <div class="eContainer">
+                    <span id="menu_more"></span>
+                    <h1><a href="#" >EPAM jobs</a></h1>
+                    <div class="eHeaderTop-right">
+                        <div>
+                            <input type="text" />
+                            <a href="javascript:void(0)"></a>
+                        </div>
+                        <div>
+                            <a href="#">LOGIN</a>
+                            <span> or </span>
+                            <a href="#">REGISTER</a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="eHeaderBottom">
+                <div class="eContainer">
+                    <div>
+                        <a href="#">IT jobs</a>
+                        <a href="#">Companies hiring</a>
+                        <a href="#">Career tools</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div>
+                        <span id="star-icon">
+                            <a href="#"></a>
+                            <span>30</span>
+                        </span>
+                        <span id="checkout-icon">
+                            <a href="#"></a>
+                            <span>0</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="eCommerceMain">
+            <div class="eBanner">
+                <div class="eContainer">
+                    <div>
+                        <img src="img/logo.png" />
+                    </div>
+                    <div>
+                        <span>need job?</span>
+                        <h1>Find job, <br>we will help you.</h1>
+                        <p>Nunc non fermentum nunc. Sed ut ante<br>
+                            eget leo tempor consequat sit amet eu orci.<br>
+                            Donec dignissim dolor eget..</p>
+                        <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="jobSearchSection">
+                    <input type="text" placeholder="Job title, skill or company" autofocus name="what"/>
+                    <input type="text" placeholder="Country, town or postcode" name="where"/>
+                    <select>
+                        <option>0 miles</option>
+                        <option selected="selected">10 miles</option>
+                        <option>20 miles</option>
+                        <option>30 miles</option>
+                        <option>40 miles</option>
+                        <option>50 miles</option>
+                    </select>
+                    <a href="javascript:void(0)">SEARCH</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="eMainTop">
+                <div class="eTabTop">
+                    <div class="eContainer">
+                        <div class="ePlaceholderSeparator"></div>
+                        <div class="ePlaceholderContainer">
+                            <span id="tabPlaceholder1" class="tabPlaceholder active"></span>
+                            <span class="tabPlaceholderSeparator"></span>
+                            <span id="tabPlaceholder2" class="tabPlaceholder"></span>
+                            <span class="tabPlaceholderSeparator"></span>
+                            <span id="tabPlaceholder3" class="tabPlaceholder"></span>
+                            <span class="tabPlaceholderSeparator"></span>
+                            <span id="tabPlaceholder4" class="tabPlaceholder"></span>
+                            <span class="tabPlaceholderSeparator"></span>
+                            <span id="tabPlaceholder5" class="tabPlaceholder"></span>
+                        </div>
+                        <div class="eTabMenuItems">
+                            <a href="javascript:void(0)" onclick="EPAMstore.shopTab(this, '1')" class="active">
+                                <span>Jobs by</span>
+                                <h1>role</h1>
+                            </a>
+                            <a href="javascript:void(0)" onclick="EPAMstore.shopTab(this, '2')">
+                                <span>Jobs by</span>
+                                <h1>skill</h1>
+                            </a>
+                            <a href="javascript:void(0)" onclick="EPAMstore.shopTab(this, '3')">
+                                <span>Jobs by</span>
+                                <h1>sector</h1>
+                            </a>
+                            <a href="javascript:void(0)" onclick="EPAMstore.shopTab(this, '4')">
+                                <span>Jobs by</span>
+                                <h1>location</h1>
+                            </a>
+                            <a href="javascript:void(0)" onclick="EPAMstore.shopTab(this, '5')">
+                                <span>Jobs by</span>
+                                <h1>company</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="eTabBottom">
+                    <div class="eContainer">
+                        <div class="eTabContainer">
+                            <div class="eCurrentTab" id="eCurrentTab1">
+                                <div>
+                                    <h1><a href="#">Animation (12)</a></h1>
+                                    <h1><a href="#">Banking and finance (2)</a></h1>
+                                    <h1><a href="#">Big data (7)</a></h1>
+                                    <h1><a href="#">Cisco (25)</a></h1>
+                                    <h1><a href="#">Communications (32)</a></h1>
+                                </div>
+                                <div>
+                                    <h1><a href="#">Consultancy (12)</a></h1>
+                                    <h1><a href="#">Cyber security (42)</a></h1>
+                                    <h1><a href="#">Digital marketing (10)</a></h1>
+                                    <h1><a href="#">eCommerce (5)</a></h1>
+                                    <h1><a href="#">Gaming (53)</a></h1>
+                                </div>
+                                <div>
+                                    <h1><a href="#">Internet (41)</a></h1>
+                                    <h1><a href="#">IT security (2)</a></h1>
+                                    <h1><a href="#">Media (57)</a></h1>
+                                    <h1><a href="#">New media (79)</a></h1>
+                                    <h1><a href="#">Public sector (1)</a></h1>
+                                </div>
+                            </div>
+                            <div class="eCurrentTab" id="eCurrentTab2">
+                                <div>
+                                    <h1><a href="#">Analyst(11)</a></h1>
+                                    <h1><a href="#">Android developer(11)</a></h1>
+                                    <h1><a href="#">IT director(11)</a></h1>
+                                    <h1><a href="#">IT trainer(11)</a></h1>
+                                    <h1><a href="#">Software developer(11)</a></h1>
+                                </div>
+                                <div>
+                                    <h1><a href="#">PHP developer(11)</a></h1>
+                                    <h1><a href="#">IT support(11)</a></h1>
+                                    <h1><a href="#">Head of IT(11)</a></h1>
+                                    <h1><a href="#">IT sales(11)</a></h1>
+                                    <h1><a href="#">Test manager(11)</a></h1>
+                                </div>
+                                <div>
+                                    <h1><a href="#">Entry level IT(11)</a></h1>
+                                    <h1><a href="#">IT contract(11)</a></h1>
+                                    <h1><a href="#">Testing(11)</a></h1>
+                                    <h1><a href="#">Project support(11)</a></h1>
+                                    <h1><a href="#">Public sector(11)</a></h1>
+                                </div>
+                            </div>
+                            <div class="eCurrentTab" id="eCurrentTab3">
+                                <div>
+                                    <h1><a href="#">Animation(11)</a></h1>
+                                    <h1><a href="#">Banking and finance(11)</a></h1>
+                                    <h1><a href="#">Big data(11)</a></h1>
+                                    <h1><a href="#">Cisco(11)</a></h1>
+                                    <h1><a href="#">Communications(11)</a></h1>
+                                </div>
+                                <div>
+                                    <h1><a href="#">Internet(11)</a></h1>
+                                    <h1><a href="#">IT security(11)</a></h1>
+                                    <h1><a href="#">Media(11)</a></h1>
+                                    <h1><a href="#">New media(11)</a></h1>
+                                    <h1><a href="#">Public sector(11)</a></h1>
+                                </div>
+                                <div>
+                                    <h1><a href="#">Consultancy(11)</a></h1>
+                                    <h1><a href="#">Cyber security(11)</a></h1>
+                                    <h1><a href="#">Digital marketing(11)</a></h1>
+                                    <h1><a href="#">eCommerce(11)</a></h1>
+                                    <h1><a href="#">Gaming(11)</a></h1>
+
+                                </div>
+                            </div>
+                            <div class="eCurrentTab" id="eCurrentTab4">
+                                <div>
+                                    <h1><a href="#">Internet(11)</a></h1>
+                                    <h1><a href="#">IT security(11)</a></h1>
+                                    <h1><a href="#">Media(11)</a></h1>
+                                    <h1><a href="#">New media(11)</a></h1>
+                                    <h1><a href="#">Public sector(11)</a></h1>
+
+                                </div>
+                                <div>
+                                    <h1><a href="#">Consultancy(11)</a></h1>
+                                    <h1><a href="#">Cyber security(11)</a></h1>
+                                    <h1><a href="#">Digital marketing(11)</a></h1>
+                                    <h1><a href="#">eCommerce(11)</a></h1>
+                                    <h1><a href="#">Gaming(11)</a></h1>
+                                </div>
+                                <div>
+                                    <h1><a href="#">Animation(11)</a></h1>
+                                    <h1><a href="#">Banking and finance(11)</a></h1>
+                                    <h1><a href="#">Big data(11)</a></h1>
+                                    <h1><a href="#">Cisco(11)</a></h1>
+                                    <h1><a href="#">Communications(11)</a></h1>
+                                </div>
+                            </div>
+                            <div class="eCurrentTab" id="eCurrentTab5">
+                                <div>
+
+                                    <h1><a href="#">Consultancy</a></h1>
+                                    <h1><a href="#">Cyber security</a></h1>
+                                    <h1><a href="#">Digital marketing</a></h1>
+                                    <h1><a href="#">eCommerce</a></h1>
+                                    <h1><a href="#">Gaming</a></h1>
+                                </div>
+                                <div>
+                                    <h1><a href="#">Animation</a></h1>
+                                    <h1><a href="#">Banking and finance</a></h1>
+                                    <h1><a href="#">Big data</a></h1>
+                                    <h1><a href="#">Cisco</a></h1>
+                                    <h1><a href="#">Communications</a></h1>
+                                </div>
+                                <div>
+                                    <h1><a href="#">Internet</a></h1>
+                                    <h1><a href="#">IT security</a></h1>
+                                    <h1><a href="#">Media</a></h1>
+                                    <h1><a href="#">New media</a></h1>
+                                    <h1><a href="#">Public sector</a></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="eMainCenter">
+                <div class="eContainer">
+                    <div class="eShoesContainer1" id="shoesContainer1">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="eCommerceFooter">
+            <div class="footerTop">
+                <div class="eContainer">
+                    <div>
+                        <h1>TEXT WIDGET</h1>
+                        <p>
+                            Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.
+                            Nullam id dolor id nibh ultricies vehicula ut id elit. Integer
+                            posuere erat a ante venenatis dapibus posuere velit aliquet.
+                            Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+                            eget lacinia odio sem nec elit.
+                        </p>
+                    </div>
+                    <div>
+                        <h1>TWITTER WIDGET</h1>
+                        <p>
+                            <span>@ericafustero</span>
+                            Why thank you. Your work looks awesomeby the way!
+                            <span>@ericafustero</span>
+
+                        </p>
+                        <p class="days">19 days ago</p>
+                        <p>
+                            <span>@roymarvelous</span>
+                            You can seek a refund through TF if it is not as advertised - but it is :)
+                        </p>
+                        <p class="days">21 days ago</p>
+                    </div>
+                    <div>
+                        <h1>FLICKR WIDGET</h1>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footerTop footerTopEmailSection">
+                <div class="eContainer">
+                    <div class="footerEmailInput">
+                        <input type="text" placeholder="Enter email for newslater"/>
+                        <a href="#"></a>
+                    </div>
+                    <div class="footerSocialIconsContainer">
+                        <span class="fb"></span>
+                        <span class="tw"></span>
+                        <span class="gp"></span>
+                        <span class="in"></span>
+                        <span class="li"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+            <div class="eContainer">
+                <div class="footerBottomLeft">
+                    <div>Copyright &copy; EPAM jobs</div>
+                </div>
+                <div class="footerBottomRight">
+                    <div>
+                        <a href="#">Home </a><span>/</span>
+                        <a href="#">Support </a><span>/</span>
+                        <a href="#">Terms and conditions </a><span>/</span>
+                        <a href="#">Faqs </a><span>/</span>
+                        <a href="#">Contact us</a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </body>
+</html>

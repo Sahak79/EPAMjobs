@@ -1,0 +1,608 @@
+@font-face {
+    font-family: Adequate;
+    src: url(fonts/Adequate-ExtraLight.ttf);
+}
+
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.eHeader{
+    max-height: 104px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.eHeaderTop .eContainer h1{
+    font-family: Adequate,sans-serif;
+}
+.eContainer{
+    width: 1170px;
+    margin: 0 auto;
+}
+.eHeaderTop .eContainer{
+    height: 45px;
+}
+.eHeader .eHeaderBottom{
+    height: 59px;
+}
+.eHeaderBottom .eContainer,
+.eHeaderBottom .eContainer div:nth-child(1),
+.eHeaderBottom .eContainer div:nth-child(2){
+    height: 100%;
+}
+.eHeaderBottom .eContainer div{
+    display: inline-block;
+}
+.eHeaderBottom .eContainer div:nth-child(2){
+    float: right;
+}
+.eHeaderBottom .eContainer div:nth-child(1) a,
+.eHeaderBottom .eContainer div:nth-child(2)>span{
+    line-height: 60px;
+    padding: 21px;
+    border-left: 1px solid #eeeeee;
+    color: black;
+    margin-left: -5px;
+}
+#star-icon>a{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/star-icon.png");
+}
+#star-icon>span{
+    background-color: #adadad;
+    padding: 3px 3px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 900;
+}
+#checkout-icon>span{
+    background-color: #00B6CD;
+    padding: 3px 9px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 900;
+}
+#checkout-icon>a{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/checkout-icon.png");
+}
+.eHeaderBottom .eContainer div:nth-child(1) a:first-child{
+    margin-left: 0;
+}
+.eHeaderBottom .eContainer div:nth-child(1) a:last-child,
+.eHeaderBottom .eContainer div:nth-child(2)>span:last-child{
+    border-right: 1px solid #eeeeee;
+}
+.eHeaderBottom .eContainer div:nth-child(1) a:hover{
+    background-color: #eeeeee;
+}
+.eHeader .eHeaderTop{
+    background: #242424;
+}
+.eHeader .eHeaderBottom{
+    background: white;
+}
+.eHeader .eHeaderTop h1{
+    float: left;
+    margin-top: 10px;
+}
+.eHeader .eHeaderTop h1 a{
+    font-size: 1.6em;
+    color: #00B6CD;
+    font-weight: bold;
+}
+
+.eHeader .eHeaderTop .eHeaderTop-right{
+    float: right;
+    height: 45px;
+}
+#menu_more{
+    height: 45px;
+    width: 45px;
+    opacity: 0.6;
+    float: left;
+    background-image: url("../img/menu-more.png");
+    margin-right: 20px;
+    cursor: pointer;
+    border-left: 2px solid #242424;
+    display: none;
+}
+#menu_more:hover{
+    opacity: 1;
+    border-left: 2px solid #00B6CD;
+}
+.eHeader .eHeaderTop .eHeaderTop-right div:nth-child(1){
+    margin-top: 11px;
+    float: left;
+}
+.eHeader .eHeaderTop .eHeaderTop-right div:nth-child(1) input{
+    float: left;
+    background: rgba(114, 114, 114, 0.30);
+    border: none;
+    padding: 4px;
+}
+.eHeader .eHeaderTop .eHeaderTop-right div:nth-child(1) a{
+    background-image: url('../img/search-icon.png');
+    float: right;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 4px 4px 3px 10px;;
+}
+.eHeader .eHeaderTop .eHeaderTop-right div:nth-child(2){
+    float: right;
+    padding: 14px;
+    margin:  0 0 0 10px;
+    border-left: 1px solid #383838;
+    border-right: 1px solid #383838;
+}
+.eHeader .eHeaderTop .eHeaderTop-right div:nth-child(2) a,
+.eHeader .eHeaderTop .eHeaderTop-right div:nth-child(2) span{
+    color: #727272;
+    font-size: 0.75em;
+}
+.eBanner{
+    padding-top: 104px;
+    /*height: 500px;*/
+    background-image: url("../img/banner-bg.jpg");
+}
+.eCommerceMain .eBanner .eContainer div:nth-child(1){
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+.eCommerceMain .eBanner .eContainer div:nth-child(2){
+    display: inline-block;
+    width: 50%;
+}
+.eCommerceMain .eBanner .eContainer div:nth-child(2) h1{
+    font-size: 3em;
+}
+.eCommerceMain .eBanner .eContainer div:nth-child(2) p{
+    font-size: 1.2em;
+}
+.eCommerceMain .eBanner .eContainer div:nth-child(2)>span{
+    display: inline-block;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #00B6CD;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.eCommerceMain .eBanner .eContainer div:nth-child(2)>div{
+    display: inline-block;
+    margin-top: 10px;
+}
+.eCommerceMain .eBanner .eContainer div:nth-child(2)>div span{
+    margin: 2px;
+    cursor: pointer;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.eCommerceMain .eBanner .eContainer div:nth-child(2)>div span:nth-child(1){
+    background-image: url("../img/eye-icon.jpg");
+}
+.eCommerceMain .eBanner .eContainer div:nth-child(2)>div span:nth-child(2){
+    background-image: url("../img/back-icon.jpg");
+}
+.eCommerceMain .eBanner .eContainer div:nth-child(2)>div span:nth-child(3){
+    background-image: url("../img/star-icon.jpg");
+}
+.eCommerceMain .eBanner .eContainer div:nth-child(2)>div span:nth-child(4){
+    background-image: url("../img/buy-icon.jpg");
+}
+.eCommerceMain .eBanner div:nth-child(1)>img{
+    width: 100%;
+}
+.eCommerceMain .eMainTop,
+.eCommerceFooter .footerTop{
+    background-color: #242424;
+}
+.eCommerceMain .eMainTop .eTabTop,
+.eCommerceFooter {
+    background-color: #2e2e2e;
+}
+.eCommerceMain .eMainTop .ePlaceholderSeparator{
+    height: 6px;
+    background: inherit;
+}
+.eCommerceMain .eMainTop .ePlaceholderContainer{
+    height: 12px;
+    background-color: black;
+}
+.eCommerceMain .eMainTop .ePlaceholderContainer .tabPlaceholder{
+    display: inline-block;
+    background-color: black;
+    width: 18.7%;
+    height: 8px;
+    margin-bottom: 3px;
+}
+.eCommerceMain .eMainTop .ePlaceholderContainer .tabPlaceholder.active{
+    background-color: #00B6CD;
+}
+.eCommerceMain .eMainTop .ePlaceholderContainer .tabPlaceholder:first-child{
+    margin-left: 1%;
+}
+.eCommerceMain .eMainTop .ePlaceholderContainer .tabPlaceholderSeparator{
+    display: inline-block;
+    background-color: #242424;
+    width: 3px;
+    height: 8px;
+    margin-bottom: 3px;
+}
+.eCommerceMain .eMainTop .eTabMenuItems{
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.eCommerceMain .eMainTop .eTabMenuItems a{
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+}
+.eCommerceMain .eMainTop .eTabMenuItems a:hover h1{
+    color: white;
+}
+.eCommerceMain .eMainTop .eTabMenuItems a:hover span{
+    color: white;
+}
+.eCommerceMain .eMainTop .eTabMenuItems a h1{
+    font-size: 1.4em;
+    color: #979797;
+}
+.eCommerceMain .eMainTop .eTabMenuItems a span{
+    color: #6e6e6e;
+    font-size: 0.8em;
+}
+.eCommerceMain .eMainTop .eTabMenuItems a.active span,
+.eCommerceMain .eMainTop .eTabMenuItems a.active h1{
+    color: white;
+}
+#eCurrentTab1{
+    display: block;
+}
+
+#shoesContainer1>div:nth-child(1){
+    background-image: url("../img/jobbg1.jpg");
+}
+#shoesContainer1>div:nth-child(2){
+    background-image: url("../img/jobbg2.jpg");
+}
+#shoesContainer1>div:nth-child(3){
+    background-image: url("../img/jobbg3.jpg");
+}
+
+.eCommerceMain .eMainTop .eTabContainer .eCurrentTab{
+    display: none;
+    padding: 20px 0;
+    text-align: center;
+}
+.eCommerceMain .eMainTop .eTabContainer .eCurrentTab>div{
+    background-color: #2E2E2E;
+}
+.eCommerceMain .eMainTop .eTabContainer .eCurrentTab>div>h1{
+    margin: 5px;
+    text-align: left;
+}
+.eCommerceMain .eMainTop .eTabContainer .eCurrentTab>div>h1>a{
+    color: white;
+    margin-left: 10px;
+}
+.eCommerceMain .eMainTop .eTabContainer .eCurrentTab>div,
+.eCommerceMain .eMainCenter .eShoesContainer1>div,
+.footerTop .eContainer>div{
+    width: 30%;
+    display: inline-block;
+    background-size: cover;
+    vertical-align: top;
+    margin-left: 10px;
+}
+.eCommerceMain .eMainTop .eTabContainer .eCurrentTab div:nth-child(2),
+.eCommerceMain .eMainTop .eTabContainer .eCurrentTab div:nth-child(3),
+.eCommerceMain .eMainCenter .eShoesContainer1 div:nth-child(2),
+.eCommerceMain .eMainCenter .eShoesContainer1 div:nth-child(3),
+.footerTop .eContainer div:nth-child(2),
+.footerTop .eContainer div:nth-child(3)
+{
+    margin-left: 10px;
+}
+.eCommerceMain .eMainTop .eTabContainer .eCurrentTab div span{
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    line-height: 180px;
+    padding: 12px;
+}
+.eCommerceMain .eMainCenter .eShoesContainer1 div {
+    background-size: cover;
+}
+#shoesItem1{
+    background-image: url("../img/shoes3.jpg");
+}
+.eCommerceMain .eMainCenter{
+    background-color: #ebe7df;
+}
+.eCommerceMain .eMainCenter .eShoesContainer1{
+    text-align: center;
+    padding: 30px 0;
+}
+.eMainCenter .shoesItemFooter{
+    position: absolute;
+}
+.jobSearchSection{
+    text-align: center;
+    padding: 20px;
+}
+.jobSearchSection input, .jobSearchSection select, .jobSearchSection a{
+    margin: 10px;
+    font-size: 16px;
+    border-color: #cccccc;
+    border-radius: 5px;
+    border-style: outset;
+    padding: 14px;
+    border-width: 0px;
+    background-color: white;
+    box-shadow: 4px 1px 10px 0px rgba(42,42,42,.87);
+    font-weight: bold;
+}
+.jobSearchSection a{
+    color: white;
+    background-color: rgb(0, 182, 205);
+}
+.footerTop h1{
+    font-size: 1.3em;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: #6e6e6e;
+}
+.footerTop p{
+    font-size: 1em;
+    color: #9b9b9b;
+    font-style: italic;
+    text-align: justify;
+    margin-right: 40px;
+}
+.footerTop p.days{
+    font-weight: bold;
+    margin: 20px 0;
+}
+.footerTop p span{
+    color: rgb(0, 182, 205);
+    font-weight: bold;
+}
+.footerTop .eContainer div:nth-child(3) span{
+    display: inline-block;
+    width: 30%;
+    height: 50px;
+    margin:2px;
+    background-size: cover;
+}
+.footerTop>.eContainer div:nth-child(3)>span:nth-child(2){
+    background-image: url("../img/jobbg1.jpg");
+}
+.footerTop>.eContainer div:nth-child(3)>span:nth-child(3){
+    background-image: url("../img/jobbg2.jpg");
+}
+.footerTop>.eContainer div:nth-child(3)>span:nth-child(4){
+    background-image: url("../img/jobbg3.jpg");
+}
+.footerTop>.eContainer div:nth-child(3)>span:nth-child(5){
+    background-image: url("../img/jobbg3.jpg");
+}
+.footerTop>.eContainer div:nth-child(3)>span:nth-child(6){
+    background-image: url("../img/jobbg2.jpg");
+}
+.footerTop>.eContainer div:nth-child(3)>span:nth-child(7){
+    background-image: url("../img/jobbg1.jpg");
+}
+.eCommerceFooter hr{
+    margin-top: 0;
+    margin-bottom: 0;
+    border-width: 0;
+    height: 1px;
+}
+.footerTop .footerEmailInput input{
+    font-style: italic;
+    padding: 6px;
+    background-color: #2E2E2E;
+    border: none;
+    font-size: 1em;
+    margin-left: 10px;
+}
+.footerTop .footerEmailInput a{
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/emailInputIcon.jpg");
+    background-size: cover;
+}
+.footerTop.footerTopEmailSection .footerEmailInput,
+.footerBottomLeft{
+    margin-left: 0!important;
+    float: left;
+    width: 50% !important;
+}
+.footerTop.footerTopEmailSection>.eContainer{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.footerBottomLeft div, .footerBottomRight div{
+    color: #7C7C7C;
+    padding: 25px;
+}
+.footerBottomRight a{
+    color: #7C7C7C;
+}
+.footerTop.footerTopEmailSection .footerSocialIconsContainer,
+.footerBottomRight{
+    margin-left: 0!important;
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.footerTop.footerTopEmailSection .footerSocialIconsContainer span{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    cursor: pointer;
+}
+.footerTop.footerTopEmailSection .footerSocialIconsContainer span:nth-child(1){
+    background-image: url("../img/fb-logo.jpg");
+}
+.footerTop.footerTopEmailSection .footerSocialIconsContainer span:nth-child(2){
+    background-image: url("../img/tw-logo.jpg");
+}
+.footerTop.footerTopEmailSection .footerSocialIconsContainer span:nth-child(3){
+    background-image: url("../img/gp-logo.jpg");
+}
+.footerTop.footerTopEmailSection .footerSocialIconsContainer span:nth-child(4){
+    background-image: url("../img/in-logo.jpg");
+}
+.footerTop.footerTopEmailSection .footerSocialIconsContainer span:nth-child(5){
+    background-image: url("../img/li-logo.jpg");
+}
+.footerTop.footerTopEmailSection .footerSocialIconsContainer span:last-child{
+    margin-right: 10px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+@media screen and (max-width: 1170px){
+    .eCommerceMain .eMainTop .ePlaceholderContainer .tabPlaceholder{
+        width: 18.2%;
+    }
+    .eContainer{
+        width: 750px;
+    }
+    .eBanner{
+
+    }
+    .eCommerceMain .eBanner .eContainer div:nth-child(2)>div{
+        margin-top: 30px;
+    }
+    .eCommerceMain .eBanner .eContainer div:nth-child(2)>div span {
+        margin: 0;
+        width: 30px !important;
+        height: 30px !important;
+        background-position: -5px -5px;
+    }
+}
+@media screen and (max-width: 850px){
+    .jobSearchSection input, .jobSearchSection select, .jobSearchSection a{
+        width: 90%;
+    }
+    .jobSearchSection select{
+        width: 94%;
+    }
+    .jobSearchSection select{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .eContainer{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 737px){
+    .eHeaderBottom{
+        display: none;
+    }
+    #menu_more{
+        display: inline-block;
+    }
+    .eHeader .eHeaderBottom {
+        height: 100%;
+    }
+    .eHeaderBottom .eContainer div:nth-child(2) {
+        float: none;
+    }
+    .eHeaderBottom .eContainer div:nth-child(1) a{
+        display: block;
+        line-height: 14px;
+    }
+    .eHeaderBottom .eContainer div:nth-child(1),
+    .eHeaderBottom .eContainer div:nth-child(2){
+        width: 100%;
+    }
+    .eCommerceMain .eBanner .eContainer div:nth-child(2) h1 {
+        font-size: 2em;
+    }
+    .eHeader .eHeaderTop .eHeaderTop-right div:nth-child(1) input {
+        width: 140px;
+    }
+}
+@media screen and (max-width: 690px){
+    .eCommerceMain .eMainTop .ePlaceholderContainer .tabPlaceholder{
+        width: 18%;
+    }
+    .eCommerceMain .eBanner .eContainer div:nth-child(2) p{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 580px){
+    .jobSearchSection select {
+        width: 97%;
+    }
+    .eHeaderTop .eContainer {
+        height: 80px;
+    }
+    .eHeader .eHeaderTop .eHeaderTop-right {
+        position: absolute;
+        margin-top: 34px;
+        margin-left: 48px;
+    }
+    #menu_more{
+        margin-top: 35px;
+    }
+    .eHeader .eHeaderTop h1 {
+        position: absolute;
+        margin-left: 4px;
+    }
+    .eHeader .eHeaderTop .eHeaderTop-right div:nth-child(1) input {
+        width: 80px;
+    }
+    .eHeader .eHeaderTop .eHeaderTop-right div:nth-child(2){
+        padding-left: 5px;
+        padding-right: 5px;
+        border: none;
+    }
+    .eCommerceMain .eMainTop .ePlaceholderContainer .tabPlaceholder{
+        width: 17.1%;
+    }
+    .eCommerceMain .eMainTop .eTabContainer .eCurrentTab {
+        font-size: 0.6em;
+    }
+    .footerTop.footerTopEmailSection .footerEmailInput{
+        width: 100% !important;
+        text-align: left;
+    }
+    .footerTop.footerTopEmailSection .footerSocialIconsContainer{
+        float: left;
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .footerTop.footerTopEmailSection .footerSocialIconsContainer span:first-child{
+        margin-left: 10px;
+    }
+    .footerTop .eContainer>div{
+        width: 100%;
+    }
+
+}
