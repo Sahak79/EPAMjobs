@@ -68,9 +68,10 @@ body{
 }
 #checkout-icon>a{
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background-image: url("../img/checkout-icon.png");
+    background-size: 100%;
 }
 .eHeaderBottom .eContainer div:nth-child(1) a:first-child{
     margin-left: 0;
@@ -90,7 +91,7 @@ body{
 }
 .eHeader .eHeaderTop h1{
     float: left;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 .eHeader .eHeaderTop h1 a{
     font-size: 1.6em;
@@ -208,6 +209,9 @@ body{
 .eCommerceFooter .footerTop{
     background-color: #242424;
 }
+.eCommerceFooter .footerTop{
+    padding: 20px 0;
+}
 .eCommerceMain .eMainTop .eTabTop,
 .eCommerceFooter {
     background-color: #2e2e2e;
@@ -240,31 +244,33 @@ body{
     height: 8px;
     margin-bottom: 3px;
 }
-.eCommerceMain .eMainTop .eTabMenuItems{
+#eTabMenuItems{
     margin-top: 10px;
     padding-bottom: 20px;
+    text-align: center;
 }
-.eCommerceMain .eMainTop .eTabMenuItems a{
+#eTabMenuItems a{
     display: inline-block;
     width: 19%;
     text-align: center;
+    cursor: pointer;
 }
-.eCommerceMain .eMainTop .eTabMenuItems a:hover h1{
+#eTabMenuItems a:hover h1{
     color: white;
 }
-.eCommerceMain .eMainTop .eTabMenuItems a:hover span{
+#eTabMenuItems a:hover span{
     color: white;
 }
-.eCommerceMain .eMainTop .eTabMenuItems a h1{
+#eTabMenuItems a h1{
     font-size: 1.4em;
     color: #979797;
 }
-.eCommerceMain .eMainTop .eTabMenuItems a span{
+#eTabMenuItems a span{
     color: #6e6e6e;
     font-size: 0.8em;
 }
-.eCommerceMain .eMainTop .eTabMenuItems a.active span,
-.eCommerceMain .eMainTop .eTabMenuItems a.active h1{
+#eTabMenuItems a.active span,
+#eTabMenuItems a.active h1{
     color: white;
 }
 #eCurrentTab1{
@@ -298,22 +304,32 @@ body{
     margin-left: 10px;
 }
 .eCommerceMain .eMainTop .eTabContainer .eCurrentTab>div,
-.eCommerceMain .eMainCenter .eShoesContainer1>div,
-.footerTop .eContainer>div{
+.eCommerceMain .eMainCenter .eShoesContainer1>div{
     width: 30%;
     display: inline-block;
     background-size: cover;
     vertical-align: top;
-    margin-left: 10px;
+}
+.footerTop .eContainer>div{
+    width: 33%;
+    display: inline-block;
+    background-size: cover;
+    vertical-align: top;
+    text-align: right;
+}
+
+.footerTop .eContainer>div:nth-child(3){
+    float: right;
+    margin-right: 0;
 }
 .eCommerceMain .eMainTop .eTabContainer .eCurrentTab div:nth-child(2),
 .eCommerceMain .eMainTop .eTabContainer .eCurrentTab div:nth-child(3),
 .eCommerceMain .eMainCenter .eShoesContainer1 div:nth-child(2),
-.eCommerceMain .eMainCenter .eShoesContainer1 div:nth-child(3),
-.footerTop .eContainer div:nth-child(2),
-.footerTop .eContainer div:nth-child(3)
-{
-    margin-left: 10px;
+.eCommerceMain .eMainCenter .eShoesContainer1 div:nth-child(3){
+    margin-left: 4.2%;
+}
+.footerTop .eContainer>div>h1{
+    text-align: left;
 }
 .eCommerceMain .eMainTop .eTabContainer .eCurrentTab div span{
     color: white;
@@ -345,24 +361,23 @@ body{
 .jobSearchSection input, .jobSearchSection select, .jobSearchSection a{
     margin: 10px;
     font-size: 16px;
-    border-color: #cccccc;
-    border-radius: 5px;
-    border-style: outset;
     padding: 14px;
-    border-width: 0px;
+    border: 0 outset #ccc;
     background-color: white;
-    box-shadow: 4px 1px 10px 0px rgba(42,42,42,.87);
+    box-shadow: 4px 1px 10px 0 rgba(42,42,42,.87);
     font-weight: bold;
 }
 .jobSearchSection a{
     color: white;
     background-color: rgb(0, 182, 205);
 }
-.footerTop h1{
+.footerTop .eContainer div h1{
     font-size: 1.3em;
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin: 60px 0 20px 0;
     color: #6e6e6e;
+}
+.footerTop .eContainer div:nth-child(3) h1{
+    margin: 60px 0 20px 10px;
 }
 .footerTop p{
     font-size: 1em;
@@ -381,9 +396,8 @@ body{
 }
 .footerTop .eContainer div:nth-child(3) span{
     display: inline-block;
-    width: 30%;
+    width: 32%;
     height: 50px;
-    margin:2px;
     background-size: cover;
 }
 .footerTop>.eContainer div:nth-child(3)>span:nth-child(2){
@@ -416,7 +430,6 @@ body{
     background-color: #2E2E2E;
     border: none;
     font-size: 1em;
-    margin-left: 10px;
 }
 .footerTop .footerEmailInput a{
     position: absolute;
@@ -430,15 +443,16 @@ body{
 .footerBottomLeft{
     margin-left: 0!important;
     float: left;
-    width: 50% !important;
+    text-align: left;
+    width: 50%;
 }
-.footerTop.footerTopEmailSection>.eContainer{
-    padding-bottom: 50px;
-    padding-top: 50px;
+.footerTop>.eContainer>div:first-child{
+    margin-left: 0;
 }
+
 .footerBottomLeft div, .footerBottomRight div{
     color: #7C7C7C;
-    padding: 25px;
+    padding: 25px 0 25px 0;
 }
 .footerBottomRight a{
     color: #7C7C7C;
@@ -450,30 +464,22 @@ body{
     width: 50%;
     text-align: right;
 }
-.footerTop.footerTopEmailSection .footerSocialIconsContainer span{
+.footerTop.footerTopEmailSection .footerSocialIconsContainer a{
     display: inline-block;
-    width: 36px;
-    height: 36px;
-    background-size: cover;
     cursor: pointer;
+    line-height: 36px;
+    width: 36px;
+    text-align: center;
+    background-color: #3B3B3B;
+    color: #7C7C7C;
 }
-.footerTop.footerTopEmailSection .footerSocialIconsContainer span:nth-child(1){
-    background-image: url("../img/fb-logo.jpg");
+.footerTop.footerTopEmailSection .footerSocialIconsContainer a:hover{
+    color: #ffffff;
 }
-.footerTop.footerTopEmailSection .footerSocialIconsContainer span:nth-child(2){
-    background-image: url("../img/tw-logo.jpg");
-}
-.footerTop.footerTopEmailSection .footerSocialIconsContainer span:nth-child(3){
-    background-image: url("../img/gp-logo.jpg");
-}
-.footerTop.footerTopEmailSection .footerSocialIconsContainer span:nth-child(4){
-    background-image: url("../img/in-logo.jpg");
-}
-.footerTop.footerTopEmailSection .footerSocialIconsContainer span:nth-child(5){
-    background-image: url("../img/li-logo.jpg");
-}
-.footerTop.footerTopEmailSection .footerSocialIconsContainer span:last-child{
-    margin-right: 10px;
+
+.footerTop.footerTopEmailSection .footerEmailInput, .footerSocialIconsContainer{
+    width: 50%;
+    margin-right: 0!important;
 }
 
 .clearfix{
@@ -499,10 +505,14 @@ body{
         height: 30px !important;
         background-position: -5px -5px;
     }
+    .footerTop .eContainer div:nth-child(3) h1{
+        margin: 60px 0 20px 0;
+    }
 }
 @media screen and (max-width: 850px){
     .jobSearchSection input, .jobSearchSection select, .jobSearchSection a{
         width: 90%;
+        display: inline-block;
     }
     .jobSearchSection select{
         width: 94%;
@@ -512,9 +522,82 @@ body{
     }
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 770px){
     .eContainer{
         width: 100%;
+    }
+    .footerTop .eContainer>div:nth-child(3){
+        text-align: center;
+        float: left;
+    }
+    .footerTop .eContainer>div:nth-child(3) h1{
+        margin-left: 0 !important;
+    }
+    .eCommerceMain .eMainTop .ePlaceholderContainer .tabPlaceholder{
+        width: 17.1%;
+    }
+    .eCommerceMain .eMainTop .eTabContainer .eCurrentTab {
+        font-size: 0.6em;
+    }
+    .footerTop.footerTopEmailSection .footerEmailInput{
+        width: 100% !important;
+        text-align: left;
+    }
+    .footerTop.footerTopEmailSection .footerSocialIconsContainer{
+        float: left;
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .footerTop.footerTopEmailSection .footerSocialIconsContainer a:first-child{
+        margin-left: 10px;
+    }
+    .footerTop .eContainer>div{
+        width: 96%;
+    }
+    .footerTop .eContainer div:nth-child(3) span {
+        height: 100px;
+    }
+    .footerTop .eContainer>div:nth-child(3) h1{
+        margin-left: 2%;
+    }
+    .footerBottomLeft, .footerBottomRight{
+        width: 100% !important;
+        text-align: left !important;
+    }
+    #shoesContainer1>div{
+        display: block;
+        margin: 10px auto;
+    }
+
+    /* make tab menu change for less then normal */
+    #eTabMenuItems>a>h1{
+        display: inline-block;
+        margin: 6px 10px;
+    }
+    .eCurrentTab>div{
+        width: 80% !important;
+        font-size: 1.65em;
+        margin-left: 0 !important;;
+    }
+    .eCurrentTab>div>h1{
+        text-align: center !important;
+    }
+    #eTabMenuItems a{
+        width: 100%;
+    }
+    .ePlaceholderContainer{
+        display: none;
+    }
+    .footerBottomLeft div, .footerBottomRight div{
+        color: #7C7C7C;
+        padding: 25px 25px 25px 2%;
+    }
+    .footerTop>.eContainer>div {
+        margin-left: 1.47% !important;
+    }
+    .footerTop .footerEmailInput input{
+        margin-left: 10px;
     }
 
 }
@@ -560,15 +643,16 @@ body{
         width: 97%;
     }
     .eHeaderTop .eContainer {
-        height: 80px;
+        /*height: 80px;*/
+    }
+    .eHeader .eHeaderTop h1{
+        display: none;
     }
     .eHeader .eHeaderTop .eHeaderTop-right {
-        position: absolute;
-        margin-top: 34px;
-        margin-left: 48px;
+        /*margin-top: 34px;*/
     }
     #menu_more{
-        margin-top: 35px;
+        /*margin-top: 35px;*/
     }
     .eHeader .eHeaderTop h1 {
         position: absolute;
@@ -582,27 +666,6 @@ body{
         padding-right: 5px;
         border: none;
     }
-    .eCommerceMain .eMainTop .ePlaceholderContainer .tabPlaceholder{
-        width: 17.1%;
-    }
-    .eCommerceMain .eMainTop .eTabContainer .eCurrentTab {
-        font-size: 0.6em;
-    }
-    .footerTop.footerTopEmailSection .footerEmailInput{
-        width: 100% !important;
-        text-align: left;
-    }
-    .footerTop.footerTopEmailSection .footerSocialIconsContainer{
-        float: left;
-        width: 100%;
-        text-align: left;
-        margin-top: 10px;
-    }
-    .footerTop.footerTopEmailSection .footerSocialIconsContainer span:first-child{
-        margin-left: 10px;
-    }
-    .footerTop .eContainer>div{
-        width: 100%;
-    }
+
 
 }
