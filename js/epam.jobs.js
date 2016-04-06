@@ -18,12 +18,24 @@ var EPAMjobs = (function($) {
             }
         });
 
-        // attach click function onclick for tab menu items
+        // get search parameter and set location to search page with appropriate parameter
+        var jobTitle = getParameterByName("what");
+        var whatInput = $('#whatInput');
+        if(jobTitle !== null) {
+            whatInput.val(jobTitle);
+        }
+        $('#searchBtn').on('click', function() {
+            location.href = '/EPAMjobs/pages/search.html?what='+whatInput.val();
+        });
+
+        // attach click function for tab menu items
         var eTabMenu = document.getElementById('eTabMenuItems');
-        var eTabMenuItems = eTabMenu.getElementsByTagName("a");
-        for (var i = 0; i < eTabMenuItems.length; i++) {
-            var tabNumber = i+1;
-            $(eTabMenuItems[i]).attr("onclick", "EPAMjobs.shopTab(this, "+tabNumber+")");
+        if(eTabMenu != null) {
+            var eTabMenuItems = eTabMenu.getElementsByTagName("a");
+            for (var i = 0; i < eTabMenuItems.length; i++) {
+                var tabNumber = i+1;
+                $(eTabMenuItems[i]).attr("onclick", "EPAMjobs.shopTab(this, "+tabNumber+")");
+            }
         }
 
         ensureAdvertisingItemHeight();
@@ -64,9 +76,20 @@ var EPAMjobs = (function($) {
         appropriateTab.show();
     }
 
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)", "i"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
     return{
         init: init,
-        shopTab: shopTab
+        shopTab: shopTab,
+        getParameterByName: getParameterByName
     }
 })(jQuery);
 

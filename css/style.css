@@ -345,7 +345,7 @@ body{
     background-image: url("../img/shoes3.jpg");
 }
 .eCommerceMain .eMainCenter{
-    background-color: #ebe7df;
+    background-color: #ffffff;
 }
 .eCommerceMain .eMainCenter .eShoesContainer1{
     text-align: center;
@@ -356,10 +356,9 @@ body{
 }
 .jobSearchSection{
     text-align: center;
-    padding: 20px;
 }
-.jobSearchSection input, .jobSearchSection select, .jobSearchSection a{
-    margin: 10px;
+.jobSearchSection input, .jobSearchSection select, .jobSearchSection span{
+    margin: 10px 0;
     font-size: 16px;
     padding: 14px;
     border: 0 outset #ccc;
@@ -367,10 +366,35 @@ body{
     box-shadow: 4px 1px 10px 0 rgba(42,42,42,.87);
     font-weight: bold;
 }
-.jobSearchSection a{
+.jobSearchSection span{
     color: white;
     background-color: rgb(0, 182, 205);
+    cursor: pointer;
 }
+.eContainer.jobSearchSection input{
+    width: calc(35% - 32px);
+    float: left;
+}
+.eContainer.jobSearchSection select{
+    width: calc(20% - 32px);
+    float: left;
+    height: 46px;
+}
+.eContainer.jobSearchSection span{
+    float: right;
+    padding: 0 14px;
+    line-height: 46px;
+}
+.search-title h1{
+    font-size: 1.3em;
+}
+
+.eMainCenter .searchContainer{
+    margin: 10px 0;
+    background-color: #F6F6F6;
+}
+
+
 .footerTop .eContainer div h1{
     font-size: 1.3em;
     margin: 60px 0 20px 0;
@@ -481,10 +505,50 @@ body{
     width: 50%;
     margin-right: 0!important;
 }
+.searchContainer::after{
+    content: '';
+    display: block;
+    clear: both;
+}
 
 .clearfix{
     clear: both;
 }
+.search-title{
+    background-color: rgb(238, 237, 232);
+    border-bottom: 1px solid #7D7D7D;
+}
+.search-title h1{
+    padding: 10px;
+}
+#search_controls{
+    float: left;
+    display: inline-block;
+    width: 30%;
+}
+#search_result{
+    float: right;
+    display: inline-block;
+    width: 69%;
+    border-left: 1px solid #7D7D7D;
+}
+#search_controls h2, #search_controls ul{
+    padding: 10px;
+}
+#search_controls ul li{
+    margin-bottom: 6px;
+}
+#search_controls ul li a{
+    color: #00B6CD;
+}
+#search_result>div{
+    padding: 10px;
+}
+#search_result>div>button{
+    float: right;
+    margin: 4px;
+}
+
 
 @media screen and (max-width: 1170px){
     .eCommerceMain .eMainTop .ePlaceholderContainer .tabPlaceholder{
@@ -510,15 +574,22 @@ body{
     }
 }
 @media screen and (max-width: 850px){
-    .jobSearchSection input, .jobSearchSection select, .jobSearchSection a{
-        width: 90%;
+    .jobSearchSection input, .jobSearchSection select, .jobSearchSection span{
+        width: 90% !important;
         display: inline-block;
+        float: none !important;
     }
     .jobSearchSection select{
-        width: 94%;
+        width: 94%!important;
+        float: none !important;
+    }
+    .jobSearchSection span{
+        float: none !important;
+        margin-top: -10px;
     }
     .jobSearchSection select{
         margin-bottom: 30px;
+
     }
 }
 
